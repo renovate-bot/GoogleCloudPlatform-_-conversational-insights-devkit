@@ -81,7 +81,7 @@ class LLMConfig(BaseModel):
 
     model_name: str = Field(
         ...,
-        description="The name of the model to use (e.g., 'gemini-3.0-flash-preview').",
+        description="The name of the model to use (e.g., 'gemini-3.1-flash-lite-preview').",
     )
     location_id: str = Field(..., description="The location/region for the model.")
     max_concurrent_calls: int = Field(

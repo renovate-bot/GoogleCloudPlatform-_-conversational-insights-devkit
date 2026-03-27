@@ -121,7 +121,7 @@ class ScorecardOptimizer:
         self,
         project_id: str,
         location_id: str,
-        model_name: str = "gemini-3.0-flash-preview",
+        model_name: str = "gemini-3.1-flash-lite-preview",
     ):
         """
         Initializes the optimizer with Vertex AI client.
@@ -129,7 +129,7 @@ class ScorecardOptimizer:
         Args:
             project_id (str): GCP Project ID.
             location_id (str): GCP Region.
-            model_name (str): Gemini model to use (default: gemini-3.0-flash-preview).
+            model_name (str): Gemini model to use (default: gemini-3.1-flash-lite-preview).
         """
         self.client = genai.Client(
             vertexai=True, project=project_id, location=location_id

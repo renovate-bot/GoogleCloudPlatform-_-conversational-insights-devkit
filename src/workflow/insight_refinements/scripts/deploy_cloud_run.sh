@@ -20,7 +20,7 @@ IMAGE_TAG="gcr.io/${PROJECT_ID}/${SERVICE_NAME}:latest"
 ENV_VARS="GCP_PROJECT_ID=${PROJECT_ID},\
 GCP_PROJECT_NUMBER=$(gcloud projects describe ${PROJECT_ID} --format='value(projectNumber)'),\
 GCP_LOCATION_ID=${REGION},\
-LLM_MODEL_NAME=gemini-3.0-flash-preview,\
+LLM_MODEL_NAME=gemini-3.1-flash-lite-preview,\
 BQ_DATASET_ID=adk_analytics,\
 BQ_MAIN_TABLE=insights,\
 PROMPT_GCS_URI=gs://${PROJECT_ID}-staging/prompts/topic_refinement_v2.txt,\

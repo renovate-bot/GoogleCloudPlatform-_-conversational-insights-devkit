@@ -53,7 +53,7 @@ class ScriptSettings(BaseSettings):
     ccai_insights_endpoint: Optional[str] = None
 
     # LLM Defaults
-    llm_model_name: str = "gemini-3.0-flash-preview"
+    llm_model_name: str = "gemini-3.1-flash-lite-preview"
 
     # BigQuery Defaults
     bq_dataset_id: str

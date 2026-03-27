@@ -45,7 +45,7 @@ class StandardizerSettings(BaseSettings):
     bq_dataset_id: str
     bq_l2_taxonomy_table: str = "l2_taxonomy_results"
     
-    llm_model_name: str = "gemini-3.0-flash-preview"
+    llm_model_name: str = "gemini-3.1-flash-lite-preview"
     llm_location_id: str = "us-central1"
     ccai_issue_model_id: str
 

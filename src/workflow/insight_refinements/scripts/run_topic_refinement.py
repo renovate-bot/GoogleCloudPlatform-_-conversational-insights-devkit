@@ -54,7 +54,7 @@ class RefinementSettings(BaseSettings):
     ccai_feedback_regionalization: bool = False
 
     # LLM Config
-    llm_model_name: str = "gemini-3.0-flash-preview"
+    llm_model_name: str = "gemini-3.1-flash-lite-preview"
     llm_location_id: str = "us-central1"
 
     # BigQuery Config (Hub & Spoke Support)
@@ -186,5 +186,6 @@ def main():
     args = parse_args()
     try:
         run_pipeline(batch_size=args.batch_size)
-    except Exception:
+    except Exception as e:
+        logger.error(e, exc_info=True)
         sys.exit(1)

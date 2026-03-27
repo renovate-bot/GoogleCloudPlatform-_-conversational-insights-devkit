@@ -31,7 +31,7 @@ def mock_config():
             scorecard_id="test-scorecard-id",
         ),
         llm=LLMConfig(
-            model_name="gemini-3.0-flash-preview",
+            model_name="gemini-3.1-flash-lite-preview",
             location_id="us-central1",
         ),
         analysis=AnalysisConfig(
