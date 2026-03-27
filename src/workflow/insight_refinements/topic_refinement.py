@@ -13,9 +13,9 @@ import time
 import uuid
 from typing import Tuple, List, Optional, Any
 from google.genai import types
-from src.workflow.qai_pipeline.schemas.input import BatchAnalysisInput
-from src.workflow.qai_pipeline.schemas.topic import L2TaxonomyResult, TopicAuditLog
-from src.workflow.qai_pipeline.utils import (
+from src.workflow.insight_refinements.schemas.input import BatchAnalysisInput
+from src.workflow.insight_refinements.schemas.topic import L2TaxonomyResult, TopicAuditLog
+from src.workflow.insight_refinements.utils import (
     handle_api_quota,
     get_gemini_client,
     get_storage_client,

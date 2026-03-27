@@ -2,17 +2,17 @@
 import pytest
 import pandas as pd
 from unittest.mock import patch
-from src.workflow.qai_pipeline.analysis import (
+from src.workflow.insight_refinements.analysis import (
     ConversationAnalyzer,
     BigQueryOperator,
     run_batch_analysis,
 )
-from src.workflow.qai_pipeline.evaluation import (
+from src.workflow.insight_refinements.evaluation import (
     QuestionEvaluation,
     ConversationEvaluator,
     run_automated_evaluation,
 )
-from src.workflow.qai_pipeline.schemas.input import BatchAnalysisInput
+from src.workflow.insight_refinements.schemas.input import BatchAnalysisInput
 
 
 @pytest.fixture
@@ -131,7 +131,7 @@ def test_run_automated_evaluation_join():
     assert summary.iloc[0]["accuracy"] == 0.5
 
 
-@patch("src.workflow.qai_pipeline.analysis.get_oauth_token")
+@patch("src.workflow.insight_refinements.analysis.get_oauth_token")
 @patch("requests.get")
 def test_analyzer_list_conversations(mock_get, mock_token, mock_config):
     """Test listing conversations with mocked API response."""
@@ -152,7 +152,7 @@ def test_analyzer_list_conversations(mock_get, mock_token, mock_config):
     mock_get.assert_called_once()
 
 
-@patch("src.workflow.qai_pipeline.analysis.get_bq_client")
+@patch("src.workflow.insight_refinements.analysis.get_bq_client")
 def test_bq_operator_load(mock_get_bq_client, mock_config):
     """Test BigQueryOperator load_dataframe_to_staging."""
     mock_client = mock_get_bq_client.return_value
@@ -167,7 +167,7 @@ def test_bq_operator_load(mock_get_bq_client, mock_config):
     mock_client.load_table_from_dataframe.return_value.result.assert_called_once()
 
 
-@patch("src.workflow.qai_pipeline.analysis.get_bq_client")
+@patch("src.workflow.insight_refinements.analysis.get_bq_client")
 def test_bq_operator_merge(mock_get_bq_client, mock_config):
     """Test BigQueryOperator merge_staging_to_main."""
     mock_client = mock_get_bq_client.return_value
@@ -193,7 +193,7 @@ def test_bq_operator_merge(mock_get_bq_client, mock_config):
     assert "test-project.test_dataset.main" in args[0]
 
 
-@patch("src.workflow.qai_pipeline.analysis.ConversationAnalyzer")
+@patch("src.workflow.insight_refinements.analysis.ConversationAnalyzer")
 def test_run_batch_analysis_bulk(mock_analyzer_cls, mock_config):
     """Test run_batch_analysis with enable_bulk_analysis=True."""
     mock_config.analysis.enable_bulk_analysis = True

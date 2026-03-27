@@ -117,11 +117,12 @@ The [Common](/src/common) folder contains the wrappers build around the current 
 - Transcript mono audio files with STT V1
 
 ## Workflows
-The [Workflows](/src/workflows) folder contains new classes and methods to fulfill current needs that the current offering doesn't support out of the box
+The [Workflows](/src/workflow) folder contains new classes and methods to fulfill current needs that the current offering doesn't support out of the box
 - Format transcripts from Genesys cloud to Conversational Insights
 - Format transcripts from AWS to Conversational Insights
-- Format transcripts from Genesys cloud to Conversational Insights
 - Recognize roles in a transcript using Gemini
+- **QAI Scorecard Optimization:** Meta-prompting workflow to evaluate and refine QA scorecard logic using Gemini 3.0 reasoning.
+- **Granular Topic Refinement:** End-to-end pipeline for refining CCAI Issue Models into deeper L2 categories via BigQuery and Gemini.
 
 <!-- USAGE -->
 # Usage

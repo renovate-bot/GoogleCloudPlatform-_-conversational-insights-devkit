@@ -1,13 +1,13 @@
 # Copyright 2026 Google. This software is provided as-is, without warranty or representation for any use or purpose. Your use of it is subject to your agreement with Google.
 from unittest.mock import MagicMock, patch
-from src.workflow.qai_pipeline.optimization import (
+from src.workflow.insight_refinements.optimization import (
     ScorecardOptimizer,
     OptimizedScorecard,
     VerificationResult,
 )
 
 
-@patch("src.workflow.qai_pipeline.optimization.genai.Client")
+@patch("src.workflow.insight_refinements.optimization.genai.Client")
 def test_optimize_item_success(mock_client):
     """Test that optimize_question calls the LLM and returns parsed response."""
     # Mock LLM response
@@ -35,7 +35,7 @@ def test_optimize_item_success(mock_client):
     mock_client.return_value.models.generate_content.assert_called_once()
 
 
-@patch("src.workflow.qai_pipeline.optimization.genai.Client")
+@patch("src.workflow.insight_refinements.optimization.genai.Client")
 def test_verify_optimization_failure(mock_client):
     """Test verification logic identifying a failure."""
     # Mock LLM response for verification

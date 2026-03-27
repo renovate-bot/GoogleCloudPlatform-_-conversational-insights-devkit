@@ -7,9 +7,9 @@ import json
 import logging
 from typing import List, Dict, Any, Tuple
 from google.genai import types
-from src.workflow.qai_pipeline.schemas.input import BatchAnalysisInput
-from src.workflow.qai_pipeline.bq_client import TopicBQClient
-from src.workflow.qai_pipeline.utils import get_gemini_client, qai_logger
+from src.workflow.insight_refinements.schemas.input import BatchAnalysisInput
+from src.workflow.insight_refinements.bq_client import TopicBQClient
+from src.workflow.insight_refinements.utils import get_gemini_client, qai_logger
 
 logger = logging.getLogger(__name__)
 

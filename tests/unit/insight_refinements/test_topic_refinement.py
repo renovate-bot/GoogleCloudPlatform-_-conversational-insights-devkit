@@ -1,9 +1,9 @@
 # Copyright 2026 Google. This software is provided as-is, without warranty or representation for any use or purpose. Your use of it is subject to your agreement with Google.
 import pytest
 from unittest.mock import MagicMock, patch
-from src.workflow.qai_pipeline.topic_refinement import TopicRefiner
-from src.workflow.qai_pipeline.schemas.topic import L2TaxonomyResult
-from src.workflow.qai_pipeline.schemas.input import (
+from src.workflow.insight_refinements.topic_refinement import TopicRefiner
+from src.workflow.insight_refinements.schemas.topic import L2TaxonomyResult
+from src.workflow.insight_refinements.schemas.input import (
     BatchAnalysisInput,
     GCPConfig,
     CCAIConfig,
@@ -31,8 +31,8 @@ def mock_config():
     )
 
 
-@patch("src.workflow.qai_pipeline.topic_refinement.get_storage_client")
-@patch("src.workflow.qai_pipeline.topic_refinement.get_gemini_client")
+@patch("src.workflow.insight_refinements.topic_refinement.get_storage_client")
+@patch("src.workflow.insight_refinements.topic_refinement.get_gemini_client")
 def test_refine_topic_success(mock_genai_client, mock_storage_client, mock_config):
     """Test that the TopicRefiner correctly calls Gemini and parses the response."""
     refiner = TopicRefiner(mock_config)
@@ -68,8 +68,8 @@ def test_refine_topic_success(mock_genai_client, mock_storage_client, mock_confi
     assert "Agent: Hello" in str(kwargs["contents"])
 
 
-@patch("src.workflow.qai_pipeline.topic_refinement.get_storage_client")
-@patch("src.workflow.qai_pipeline.topic_refinement.get_gemini_client")
+@patch("src.workflow.insight_refinements.topic_refinement.get_storage_client")
+@patch("src.workflow.insight_refinements.topic_refinement.get_gemini_client")
 def test_refine_topic_malformed_json(
     mock_genai_client, mock_storage_client, mock_config
 ):
@@ -92,8 +92,8 @@ def test_refine_topic_malformed_json(
     assert audit.status == "error"
 
 
-@patch("src.workflow.qai_pipeline.topic_refinement.get_storage_client")
-@patch("src.workflow.qai_pipeline.topic_refinement.get_gemini_client")
+@patch("src.workflow.insight_refinements.topic_refinement.get_storage_client")
+@patch("src.workflow.insight_refinements.topic_refinement.get_gemini_client")
 def test_prompt_template_gcs_fallback(
     mock_genai_client, mock_storage_client, mock_config
 ):
@@ -107,14 +107,14 @@ def test_prompt_template_gcs_fallback(
     refiner = TopicRefiner(mock_config)
 
     # Verify it used the fallback template
-    from src.workflow.qai_pipeline.topic_refinement import DEFAULT_USER_PROMPT_TEMPLATE
+    from src.workflow.insight_refinements.topic_refinement import DEFAULT_USER_PROMPT_TEMPLATE
 
     assert refiner.prompt_template == DEFAULT_USER_PROMPT_TEMPLATE
 
 
-@patch("src.workflow.qai_pipeline.topic_refinement.get_storage_client")
-@patch("src.workflow.qai_pipeline.topic_refinement.get_gemini_client")
-@patch("src.workflow.qai_pipeline.topic_refinement.os.path.exists")
+@patch("src.workflow.insight_refinements.topic_refinement.get_storage_client")
+@patch("src.workflow.insight_refinements.topic_refinement.get_gemini_client")
+@patch("src.workflow.insight_refinements.topic_refinement.os.path.exists")
 def test_strict_mode_taxonomy_enforcement(
     mock_exists, mock_genai_client, mock_storage_client, mock_config
 ):

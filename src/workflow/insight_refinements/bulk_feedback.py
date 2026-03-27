@@ -11,8 +11,8 @@ import csv
 import time
 from typing import Dict, Any
 from google.cloud import contact_center_insights_v1
-from src.workflow.qai_pipeline.schemas.input import BatchAnalysisInput, FeedbackCSVRow
-from src.workflow.qai_pipeline.utils import handle_api_quota, qai_logger
+from src.workflow.insight_refinements.schemas.input import BatchAnalysisInput, FeedbackCSVRow
+from src.workflow.insight_refinements.utils import handle_api_quota, qai_logger
 
 
 class BulkFeedbackManager:
@@ -44,7 +44,7 @@ class BulkFeedbackManager:
         self.client = contact_center_insights_v1.ContactCenterInsightsClient(
             client_options=client_options
         )
-        from src.workflow.qai_pipeline.utils import get_storage_client
+        from src.workflow.insight_refinements.utils import get_storage_client
 
         self.storage_client = get_storage_client(config)
 

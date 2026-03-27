@@ -10,8 +10,8 @@ sys.modules["google.cloud"].contact_center_insights_v1 = mock_ccai
 
 import pytest  # noqa: E402
 from unittest.mock import mock_open  # noqa: E402
-from src.workflow.qai_pipeline.bulk_feedback import BulkFeedbackManager  # noqa: E402
-from src.workflow.qai_pipeline.schemas.input import BatchAnalysisInput  # noqa: E402
+from src.workflow.insight_refinements.bulk_feedback import BulkFeedbackManager  # noqa: E402
+from src.workflow.insight_refinements.schemas.input import BatchAnalysisInput  # noqa: E402
 
 
 @pytest.fixture
@@ -34,7 +34,7 @@ def mock_config():
     )
 
 
-@patch("src.workflow.qai_pipeline.utils.get_storage_client")
+@patch("src.workflow.insight_refinements.utils.get_storage_client")
 def test_csv_row_to_json_label(mock_storage, mock_config):
     """Test the mapping from CSV row to FeedbackLabel JSON structure."""
     # We don't need to patch CCAI client again because we mocked the module
@@ -63,7 +63,7 @@ def test_csv_row_to_json_label(mock_storage, mock_config):
     assert label["qa_answer_label"]["score"] == 1.0
 
 
-@patch("src.workflow.qai_pipeline.utils.get_storage_client")
+@patch("src.workflow.insight_refinements.utils.get_storage_client")
 def test_upload_from_local_csv(mock_storage, mock_config):
     """Test the orchestration of reading CSV and uploading to GCS."""
     manager = BulkFeedbackManager(mock_config)

@@ -2,7 +2,7 @@
 import pytest
 import pandas as pd
 from unittest.mock import MagicMock, patch
-from src.workflow.qai_pipeline.schemas.input import BatchAnalysisInput, GCPConfig, CCAIConfig, BigQueryConfig, TopicRefinementConfig, LLMConfig
+from src.workflow.insight_refinements.schemas.input import BatchAnalysisInput, GCPConfig, CCAIConfig, BigQueryConfig, TopicRefinementConfig, LLMConfig
 
 # We'll implement the core logic in a class we can test easily
 # even though the final script will be a CLI wrapper.
@@ -24,8 +24,8 @@ def mock_config():
         ),
     )
 
-@patch("src.workflow.qai_pipeline.taxonomy_utils.TopicBQClient")
-@patch("src.workflow.qai_pipeline.utils.get_gemini_client")
+@patch("src.workflow.insight_refinements.taxonomy_utils.TopicBQClient")
+@patch("src.workflow.insight_refinements.utils.get_gemini_client")
 def test_standardize_taxonomy_logic(mock_gemini, mock_bq, mock_config):
     """
     Tests that the standardizer fetches unique strings and calls Gemini
@@ -55,7 +55,7 @@ def test_standardize_taxonomy_logic(mock_gemini, mock_bq, mock_config):
     mock_gemini.return_value.models.generate_content.return_value = mock_response
 
     # --- This is where we define the class we ARE GOING to build ---
-    from src.workflow.qai_pipeline.taxonomy_utils import TaxonomyStandardizer
+    from src.workflow.insight_refinements.taxonomy_utils import TaxonomyStandardizer
     standardizer = TaxonomyStandardizer(mock_config)
     
     unique_categories = standardizer.fetch_unique_categories()

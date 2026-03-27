@@ -414,7 +414,7 @@ class Analysis:
                 selected_annotators.run_phrase_matcher_annotator = True
                 selected_annotators.run_silence_annotator = True
                 selected_annotators.run_interruption_annotator = True
-            if annotator == Annotators.INSIGHTS:
+            if annotator == Annotators.QAI:
                 raise ValueError("QAI annotator is not available")
         return selected_annotators
 

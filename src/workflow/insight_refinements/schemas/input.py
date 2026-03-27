@@ -8,6 +8,7 @@ the input configuration and data for the batch analysis and evaluation workflow.
 
 from typing import Optional, Dict
 from pydantic import BaseModel, Field, field_validator
+from src.core import base
 
 
 class GCPConfig(BaseModel):
@@ -216,6 +217,14 @@ class BatchAnalysisInput(BaseModel):
     topic_refinement: Optional[TopicRefinementConfig] = Field(
         None, description="Topic refinement configuration."
     )
+
+    def get_auth(self) -> base.Auth:
+        """Adapter method to generate the Devkit's native Auth object."""
+        return base.Auth()
+
+    def get_config(self) -> base.Config:
+        """Adapter method to generate the Devkit's native Config object."""
+        return base.Config(region=self.gcp.location_id)
 
 
 class FeedbackCSVRow(BaseModel):

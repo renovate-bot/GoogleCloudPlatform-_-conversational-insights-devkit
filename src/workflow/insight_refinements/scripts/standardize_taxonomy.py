@@ -15,8 +15,8 @@ import uuid
 import pandas as pd
 from typing import Optional
 from pydantic_settings import BaseSettings
-from src.workflow.qai_pipeline.taxonomy_utils import TaxonomyStandardizer
-from src.workflow.qai_pipeline.schemas.input import (
+from src.workflow.insight_refinements.taxonomy_utils import TaxonomyStandardizer
+from src.workflow.insight_refinements.schemas.input import (
     BatchAnalysisInput,
     GCPConfig,
     CCAIConfig,

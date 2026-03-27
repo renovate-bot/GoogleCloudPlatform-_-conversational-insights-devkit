@@ -1,7 +1,7 @@
 # Copyright 2026 Google. This software is provided as-is, without warranty or representation for any use or purpose. Your use of it is subject to your agreement with Google.
 import pytest
 from unittest.mock import MagicMock, patch
-from src.workflow.qai_pipeline.utils import handle_api_quota, StructuredLogger
+from src.workflow.insight_refinements.utils import handle_api_quota, StructuredLogger
 from google.api_core.exceptions import ResourceExhausted
 
 
@@ -46,7 +46,7 @@ def test_structured_logger_format(capsys):
     assert True
 
 
-@patch("src.workflow.qai_pipeline.utils.time.sleep")  # Don't actually sleep in tests
+@patch("src.workflow.insight_refinements.utils.time.sleep")  # Don't actually sleep in tests
 def test_handle_api_quota_backoff_timing(mock_sleep):
     """Test that exponential backoff logic is applied with correct math."""
     mock_func = MagicMock(

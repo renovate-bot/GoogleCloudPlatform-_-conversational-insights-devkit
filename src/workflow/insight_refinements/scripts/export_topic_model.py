@@ -15,9 +15,9 @@ import requests
 import pandas as pd
 from typing import Optional
 from pydantic_settings import BaseSettings
-from src.workflow.qai_pipeline.analysis import ConversationAnalyzer, BigQueryOperator
-from src.workflow.qai_pipeline.utils import get_storage_client
-from src.workflow.qai_pipeline.schemas.input import (
+from src.workflow.insight_refinements.analysis import ConversationAnalyzer, BigQueryOperator
+from src.workflow.insight_refinements.utils import get_storage_client
+from src.workflow.insight_refinements.schemas.input import (
     BatchAnalysisInput,
     GCPConfig,
     CCAIConfig,

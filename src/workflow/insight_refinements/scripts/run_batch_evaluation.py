@@ -14,7 +14,7 @@ import sys
 import json
 from typing import Optional
 from pydantic_settings import BaseSettings
-from src.workflow.qai_pipeline.schemas.input import (
+from src.workflow.insight_refinements.schemas.input import (
     BatchAnalysisInput,
     GCPConfig,
     CCAIConfig,
@@ -22,9 +22,9 @@ from src.workflow.qai_pipeline.schemas.input import (
     BigQueryConfig,
     LLMConfig,
 )
-from src.workflow.qai_pipeline.analysis import run_batch_analysis
-from src.workflow.qai_pipeline.bulk_feedback import BulkFeedbackManager
-from src.workflow.qai_pipeline.optimization import ScorecardOptimizer
+from src.workflow.insight_refinements.analysis import run_batch_analysis
+from src.workflow.insight_refinements.bulk_feedback import BulkFeedbackManager
+from src.workflow.insight_refinements.optimization import ScorecardOptimizer
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
@@ -223,7 +223,10 @@ def main():
     # 5. Run Analysis
     try:
         results = run_batch_analysis(config)
-        logger.info(f"Analysis complete. Processed {len(results)} conversations.")
+        if config.analysis.enable_bulk_analysis:
+            logger.info("Bulk Analysis job completed successfully via Devkit wrappers.")
+        else:
+            logger.info(f"Analysis complete. Processed {len(results)} conversations.")
     except Exception as e:
         logger.error(f"Analysis failed: {e}")
         sys.exit(1)

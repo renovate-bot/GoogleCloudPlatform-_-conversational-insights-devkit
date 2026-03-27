@@ -11,7 +11,7 @@ from typing import List, Optional, Dict, Any
 from pydantic import BaseModel, Field, ValidationError
 from google import genai
 from google.genai import types
-from src.workflow.qai_pipeline.utils import handle_api_quota, qai_logger
+from src.workflow.insight_refinements.utils import handle_api_quota, qai_logger
 
 # Configure logging
 logger = logging.getLogger(__name__)

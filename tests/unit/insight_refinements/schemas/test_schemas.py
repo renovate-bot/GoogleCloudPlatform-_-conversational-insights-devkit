@@ -1,8 +1,8 @@
 # Copyright 2026 Google. This software is provided as-is, without warranty or representation for any use or purpose. Your use of it is subject to your agreement with Google.
 import pytest
-from src.workflow.qai_pipeline.schemas.input import BatchAnalysisInput, FeedbackCSVRow
-from src.workflow.qai_pipeline.schemas.output import EvaluationMetrics, EvaluationResult
-from src.workflow.qai_pipeline.schemas.topic import L1TopicDefinition, L2TaxonomyResult, TopicAuditLog
+from src.workflow.insight_refinements.schemas.input import BatchAnalysisInput, FeedbackCSVRow
+from src.workflow.insight_refinements.schemas.output import EvaluationMetrics, EvaluationResult
+from src.workflow.insight_refinements.schemas.topic import L1TopicDefinition, L2TaxonomyResult, TopicAuditLog
 
 
 def test_batch_analysis_input_validation():
