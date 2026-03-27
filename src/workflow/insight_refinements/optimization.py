@@ -135,9 +135,7 @@ class ScorecardOptimizer:
             vertexai=True, project=project_id, location=location_id
         )
         self.model_name = model_name
-        self.verification_model = (
-            "gemini-2.0-flash"  # Use a fast/stable model for verification
-        )
+        self.verification_model = model_name  # Use same model to match location config
 
     def _format_evidence(self, raw_examples: List[Dict[str, Any]]) -> str:
         """Formats disagreement cases into XML for the prompt."""

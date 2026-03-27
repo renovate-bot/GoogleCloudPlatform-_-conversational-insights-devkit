@@ -46,7 +46,7 @@ class StandardizerSettings(BaseSettings):
     bq_l2_taxonomy_table: str = "l2_taxonomy_results"
     
     llm_model_name: str = "gemini-3.1-flash-lite-preview"
-    llm_location_id: str = "us-central1"
+    llm_location_id: str = "global"
     ccai_issue_model_id: str
 
 def parse_args():

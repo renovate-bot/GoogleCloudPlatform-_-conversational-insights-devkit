@@ -143,7 +143,7 @@ def main():
 
             optimizer = ScorecardOptimizer(
                 project_id=settings.gcp_project_id,
-                location_id="us-central1",  # Optimization region
+                location_id="global",  # Optimization region
                 model_name=settings.llm_model_name,
             )
 
@@ -186,7 +186,7 @@ def main():
         ),
         llm=LLMConfig(
             model_name=settings.llm_model_name,
-            location_id="us-central1",
+            location_id="global",
         ),
         analysis=AnalysisConfig(
             analysis_percentage=args.analysis_percentage,

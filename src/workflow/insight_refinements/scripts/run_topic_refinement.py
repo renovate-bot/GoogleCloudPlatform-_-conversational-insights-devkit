@@ -55,7 +55,7 @@ class RefinementSettings(BaseSettings):
 
     # LLM Config
     llm_model_name: str = "gemini-3.1-flash-lite-preview"
-    llm_location_id: str = "us-central1"
+    llm_location_id: str = "global"
 
     # BigQuery Config (Hub & Spoke Support)
     bq_project_id: Optional[str] = None
