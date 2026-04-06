@@ -121,6 +121,8 @@ The `src/conidk/workflow` folder introduces new classes and methods designed to 
 *   Transforms transcripts from vendors like Genesys Cloud to an Insights-compatible format.
 *   Transforms transcripts from vendors like AWS to an Insights-compatible format.
 *   Performs speaker role recognition within transcripts using Gemini.
+*   QAI Scorecard Optimization: Meta-prompting workflow to evaluate and refine QA scorecard logic using Gemini 3.0 reasoning.
+*   Granular Topic Refinement: End-to-end pipeline for refining CCAI Issue Models into deeper L2 categories via BigQuery and Gemini.
 
 # Usage Examples
 Now that you understand the library's structure, here are some practical examples demonstrating its core functionalities.

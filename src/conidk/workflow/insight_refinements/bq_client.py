@@ -9,9 +9,9 @@ and writing refined L2 taxonomy results and audit logs to BigQuery.
 import logging
 import pandas as pd
 from google.cloud import bigquery
-from src.workflow.insight_refinements.schemas.input import BatchAnalysisInput
-from src.workflow.insight_refinements.analysis import BigQueryOperator
-from src.workflow.insight_refinements.utils import qai_logger
+from conidk.workflow.insight_refinements.schemas.input import BatchAnalysisInput
+from conidk.workflow.insight_refinements.analysis import BigQueryOperator
+from conidk.workflow.insight_refinements.utils import qai_logger
 
 logger = logging.getLogger(__name__)
 

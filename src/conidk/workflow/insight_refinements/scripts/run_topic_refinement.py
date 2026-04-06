@@ -15,7 +15,7 @@ import pandas as pd
 from typing import Optional
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pydantic_settings import BaseSettings
-from src.workflow.insight_refinements.schemas.input import (
+from conidk.workflow.insight_refinements.schemas.input import (
     BatchAnalysisInput,
     GCPConfig,
     CCAIConfig,
@@ -23,8 +23,8 @@ from src.workflow.insight_refinements.schemas.input import (
     BigQueryConfig,
     TopicRefinementConfig,
 )
-from src.workflow.insight_refinements.bq_client import TopicBQClient
-from src.workflow.insight_refinements.topic_refinement import TopicRefiner
+from conidk.workflow.insight_refinements.bq_client import TopicBQClient
+from conidk.workflow.insight_refinements.topic_refinement import TopicRefiner
 from dotenv import load_dotenv
 
 # Load environment variables from .env file

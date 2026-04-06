@@ -10,8 +10,8 @@ from typing import Dict, List, Optional
 
 import pandas as pd
 from google.cloud import bigquery
-from src.workflow.insight_refinements.schemas.input import BatchAnalysisInput
-from src.workflow.insight_refinements.utils import qai_logger, get_bq_client
+from conidk.workflow.insight_refinements.schemas.input import BatchAnalysisInput
+from conidk.workflow.insight_refinements.utils import qai_logger, get_bq_client
 from src.wrapper.insights import Analysis, Annotators
 
 

@@ -14,7 +14,7 @@ import sys
 import json
 from typing import Optional
 from pydantic_settings import BaseSettings
-from src.workflow.insight_refinements.schemas.input import (
+from conidk.workflow.insight_refinements.schemas.input import (
     BatchAnalysisInput,
     GCPConfig,
     CCAIConfig,
@@ -22,9 +22,9 @@ from src.workflow.insight_refinements.schemas.input import (
     BigQueryConfig,
     LLMConfig,
 )
-from src.workflow.insight_refinements.analysis import run_batch_analysis
-from src.workflow.insight_refinements.bulk_feedback import BulkFeedbackManager
-from src.workflow.insight_refinements.optimization import ScorecardOptimizer
+from conidk.workflow.insight_refinements.analysis import run_batch_analysis
+from conidk.workflow.insight_refinements.bulk_feedback import BulkFeedbackManager
+from conidk.workflow.insight_refinements.optimization import ScorecardOptimizer
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
