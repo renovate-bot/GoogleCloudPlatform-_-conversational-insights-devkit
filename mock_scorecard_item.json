@@ -1,0 +1,13 @@
+{
+  "question": "Did the agent verify the customer's identity?",
+  "instructions": "Score YES if the agent asked for the customer's name and address.",
+  "answers": "['YES', 'NO']",
+  "evidence": [
+    {
+      "human": "YES",
+      "ai": "NO",
+      "turn": "Agent: May I have your name and the last four digits of your SSN for verification? Customer: John Doe, 1234.",
+      "reason": "AI failed because instructions specify address, but human accepted SSN."
+    }
+  ]
+}
