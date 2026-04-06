@@ -1,7 +1,3 @@
-[![Linter - Standard](https://github.com/alrtas/conversational-insights-devkit-alpha/actions/workflows/python-lint.yml/badge.svg?branch=main)](https://github.com/alrtas/conversational-insights-devkit-alpha/actions/workflows/python-lint.yml)
-[![Linter - Type](https://github.com/alrtas/conversational-insights-devkit-alpha/actions/workflows/python-type.yml/badge.svg)](https://github.com/alrtas/conversational-insights-devkit-alpha/actions/workflows/python-type.yml)
-[![Tests - Unit](https://github.com/alrtas/conversational-insights-devkit-alpha/actions/workflows/python-test.yml/badge.svg?branch=main)](https://github.com/alrtas/conversational-insights-devkit-alpha/actions/workflows/python-test.yml)
-
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
