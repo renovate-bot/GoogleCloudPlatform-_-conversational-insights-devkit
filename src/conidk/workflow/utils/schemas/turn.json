@@ -1,0 +1,14 @@
+{
+  "title": "Message Schema",
+  "description": "A schema for a simple message object.",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string",
+      "description": "The text of the message."
+    }
+  },
+  "required": [
+    "message"
+  ]
+}

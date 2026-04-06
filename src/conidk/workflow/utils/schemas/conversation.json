@@ -1,0 +1,40 @@
+{
+  "title": "Conversation Entries",
+  "description": "A schema for a conversation structured as a list of entries, compatible with Contact Center Insights.",
+  "type": "object",
+  "properties": {
+    "entries": {
+      "type": "array",
+      "description": "A list of conversation entries or turns.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "description": "The transcribed text of the utterance."
+          },
+          "role": {
+            "type": "string",
+            "description": "The role of the participant who spoke.",
+            "enum": ["AGENT", "CUSTOMER"]
+          },
+          "user_id": {
+            "type": "integer",
+            "description": "A numeric identifier for the participant."
+          },
+          "start_timestamp_usec": {
+            "type": "integer",
+            "description": "The start time of the utterance in microseconds since the Unix epoch."
+          }
+        },
+        "required": [
+          "text",
+          "role",
+          "user_id",
+          "start_timestamp_usec"
+        ]
+      }
+    }
+  },
+  "required": ["entries"]
+}

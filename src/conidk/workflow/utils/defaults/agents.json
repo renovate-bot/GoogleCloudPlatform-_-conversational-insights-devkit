@@ -1,0 +1,1044 @@
+{
+    "agents": [
+        {
+            "agent_id": "100001",
+            "agent_name": "Sophia Rodriguez",
+            "agent_team": "All-Stars",
+            "traits": [
+                "amiable",
+                "cordial",
+                "gracious",
+                "approachable",
+                "sincere"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100002",
+            "agent_name": "Ethan Johnson",
+            "agent_team": "All-Stars",
+            "traits": [
+                "candid",
+                "trustworthy",
+                "articulate",
+                "expressive",
+                "considerate"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100003",
+            "agent_name": "Olivia Williams",
+            "agent_team": "All-Stars",
+            "traits": [
+                "supportive",
+                "cooperative",
+                "reserved",
+                "quiet",
+                "introspective"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100004",
+            "agent_name": "Noah Brown",
+            "agent_team": "All-Stars",
+            "traits": [
+                "analytical",
+                "practical",
+                "stoic",
+                "formal",
+                "unassuming"
+            ],
+            "performance": "neutral"
+        },
+        {
+            "agent_id": "100005",
+            "agent_name": "Ava Davis",
+            "agent_team": "All-Stars",
+            "traits": [
+                "individualistic",
+                "skeptical",
+                "amiable",
+                "cordial",
+                "gracious"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100006",
+            "agent_name": "Jackson Miller",
+            "agent_team": "All-Stars",
+            "traits": [
+                "approachable",
+                "sincere",
+                "candid",
+                "trustworthy",
+                "articulate"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100007",
+            "agent_name": "Isabella Wilson",
+            "agent_team": "All-Stars",
+            "traits": [
+                "expressive",
+                "considerate",
+                "supportive",
+                "cooperative",
+                "reserved"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100008",
+            "agent_name": "Liam Moore",
+            "agent_team": "All-Stars",
+            "traits": [
+                "quiet",
+                "introspective",
+                "analytical",
+                "practical",
+                "stoic"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100009",
+            "agent_name": "Mia Taylor",
+            "agent_team": "Communicators",
+            "traits": [
+                "formal",
+                "unassuming",
+                "individualistic",
+                "skeptical",
+                "amiable"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100010",
+            "agent_name": "Alexander Anderson",
+            "agent_team": "Communicators",
+            "traits": [
+                "cordial",
+                "gracious",
+                "approachable",
+                "sincere",
+                "candid"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100011",
+            "agent_name": "Abigail Thomas",
+            "agent_team": "Communicators",
+            "traits": [
+                "trustworthy",
+                "articulate",
+                "expressive",
+                "considerate",
+                "supportive"
+            ],
+            "performance": "negative"
+        },
+        {
+            "agent_id": "100012",
+            "agent_name": "James Jackson",
+            "agent_team": "Communicators",
+            "traits": [
+                "cooperative",
+                "reserved",
+                "quiet",
+                "introspective",
+                "analytical"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100013",
+            "agent_name": "Charlotte White",
+            "agent_team": "Communicators",
+            "traits": [
+                "practical",
+                "stoic",
+                "formal",
+                "unassuming",
+                "individualistic"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100014",
+            "agent_name": "Benjamin Harris",
+            "agent_team": "Communicators",
+            "traits": [
+                "skeptical",
+                "amiable",
+                "cordial",
+                "gracious",
+                "approachable"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100015",
+            "agent_name": "Harper Martin",
+            "agent_team": "Communicators",
+            "traits": [
+                "sincere",
+                "candid",
+                "trustworthy",
+                "articulate",
+                "expressive"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100016",
+            "agent_name": "Daniel Thompson",
+            "agent_team": "Communicators",
+            "traits": [
+                "considerate",
+                "supportive",
+                "cooperative",
+                "reserved",
+                "quiet"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100017",
+            "agent_name": "Evelyn Garcia",
+            "agent_team": "Solution Squad",
+            "traits": [
+                "introspective",
+                "analytical",
+                "practical",
+                "stoic",
+                "formal"
+            ],
+            "performance": "neutral"
+        },
+        {
+            "agent_id": "100018",
+            "agent_name": "Elijah Martinez",
+            "agent_team": "Solution Squad",
+            "traits": [
+                "unassuming",
+                "individualistic",
+                "skeptical",
+                "amiable",
+                "cordial"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100019",
+            "agent_name": "Amelia Robinson",
+            "agent_team": "Solution Squad",
+            "traits": [
+                "gracious",
+                "approachable",
+                "sincere",
+                "candid",
+                "trustworthy"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100020",
+            "agent_name": "Lucas Clark",
+            "agent_team": "Solution Squad",
+            "traits": [
+                "articulate",
+                "expressive",
+                "considerate",
+                "supportive",
+                "cooperative"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100021",
+            "agent_name": "Chloe Lewis",
+            "agent_team": "Solution Squad",
+            "traits": [
+                "reserved",
+                "quiet",
+                "introspective",
+                "analytical",
+                "practical"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100022",
+            "agent_name": "Jackson Lee",
+            "agent_team": "Solution Squad",
+            "traits": [
+                "stoic",
+                "formal",
+                "unassuming",
+                "individualistic",
+                "skeptical"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100023",
+            "agent_name": "Madison Walker",
+            "agent_team": "Solution Squad",
+            "traits": [
+                "amiable",
+                "cordial",
+                "gracious",
+                "approachable",
+                "sincere"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100024",
+            "agent_name": "Aiden Hall",
+            "agent_team": "Solution Squad",
+            "traits": [
+                "candid",
+                "trustworthy",
+                "articulate",
+                "expressive",
+                "considerate"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100025",
+            "agent_name": "Aubrey Allen",
+            "agent_team": "Support Stars",
+            "traits": [
+                "supportive",
+                "cooperative",
+                "reserved",
+                "quiet",
+                "introspective"
+            ],
+            "performance": "negative"
+        },
+        {
+            "agent_id": "100026",
+            "agent_name": "Logan Young",
+            "agent_team": "Support Stars",
+            "traits": [
+                "analytical",
+                "practical",
+                "stoic",
+                "formal",
+                "unassuming"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100027",
+            "agent_name": "Kylie Hernandez",
+            "agent_team": "Support Stars",
+            "traits": [
+                "individualistic",
+                "skeptical",
+                "amiable",
+                "cordial",
+                "gracious"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100028",
+            "agent_name": "Jackson King",
+            "agent_team": "Support Stars",
+            "traits": [
+                "approachable",
+                "sincere",
+                "candid",
+                "trustworthy",
+                "articulate"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100029",
+            "agent_name": "Ellie Wright",
+            "agent_team": "Support Stars",
+            "traits": [
+                "expressive",
+                "considerate",
+                "supportive",
+                "cooperative",
+                "reserved"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100030",
+            "agent_name": "Grayson Lopez",
+            "agent_team": "Support Stars",
+            "traits": [
+                "quiet",
+                "introspective",
+                "analytical",
+                "practical",
+                "stoic"
+            ],
+            "performance": "neutral"
+        },
+        {
+            "agent_id": "100031",
+            "agent_name": "Lily Green",
+            "agent_team": "Support Stars",
+            "traits": [
+                "formal",
+                "unassuming",
+                "individualistic",
+                "skeptical",
+                "amiable"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100032",
+            "agent_name": "Caleb Scott",
+            "agent_team": "Support Stars",
+            "traits": [
+                "cordial",
+                "gracious",
+                "approachable",
+                "sincere",
+                "candid"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100033",
+            "agent_name": "Lillian Baker",
+            "agent_team": "Customer Champions",
+            "traits": [
+                "trustworthy",
+                "articulate",
+                "expressive",
+                "considerate",
+                "supportive"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100034",
+            "agent_name": "Samuel Adams",
+            "agent_team": "Customer Champions",
+            "traits": [
+                "cooperative",
+                "reserved",
+                "quiet",
+                "introspective",
+                "analytical"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100035",
+            "agent_name": "Addison Nelson",
+            "agent_team": "Customer Champions",
+            "traits": [
+                "practical",
+                "stoic",
+                "formal",
+                "unassuming",
+                "individualistic"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100036",
+            "agent_name": "Jackson Carter",
+            "agent_team": "Customer Champions",
+            "traits": [
+                "skeptical",
+                "amiable",
+                "cordial",
+                "gracious",
+                "approachable"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100037",
+            "agent_name": "Aubree Mitchell",
+            "agent_team": "Customer Champions",
+            "traits": [
+                "sincere",
+                "candid",
+                "trustworthy",
+                "articulate",
+                "expressive"
+            ],
+            "performance": "neutral"
+        },
+        {
+            "agent_id": "100038",
+            "agent_name": "David Perez",
+            "agent_team": "Customer Champions",
+            "traits": [
+                "considerate",
+                "supportive",
+                "cooperative",
+                "reserved",
+                "quiet"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100039",
+            "agent_name": "Layla Roberts",
+            "agent_team": "Customer Champions",
+            "traits": [
+                "introspective",
+                "analytical",
+                "practical",
+                "stoic",
+                "formal"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100040",
+            "agent_name": "Joseph Turner",
+            "agent_team": "Customer Champions",
+            "traits": [
+                "unassuming",
+                "individualistic",
+                "skeptical",
+                "amiable",
+                "cordial"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100041",
+            "agent_name": "Aaliyah Phillips",
+            "agent_team": "Resolution Renegades",
+            "traits": [
+                "gracious",
+                "approachable",
+                "sincere",
+                "candid",
+                "trustworthy"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100042",
+            "agent_name": "Anthony Campbell",
+            "agent_team": "Resolution Renegades",
+            "traits": [
+                "articulate",
+                "expressive",
+                "considerate",
+                "supportive",
+                "cooperative"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100043",
+            "agent_name": "Elena Parker",
+            "agent_team": "Resolution Renegades",
+            "traits": [
+                "reserved",
+                "quiet",
+                "introspective",
+                "analytical",
+                "practical"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100044",
+            "agent_name": "Matthew Evans",
+            "agent_team": "Resolution Renegades",
+            "traits": [
+                "stoic",
+                "formal",
+                "unassuming",
+                "individualistic",
+                "skeptical"
+            ],
+            "performance": "negative"
+        },
+        {
+            "agent_id": "100045",
+            "agent_name": "Vivian Collins",
+            "agent_team": "Resolution Renegades",
+            "traits": [
+                "amiable",
+                "cordial",
+                "gracious",
+                "approachable",
+                "sincere"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100046",
+            "agent_name": "Andrew Stewart",
+            "agent_team": "Resolution Renegades",
+            "traits": [
+                "candid",
+                "trustworthy",
+                "articulate",
+                "expressive",
+                "considerate"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100047",
+            "agent_name": "Nora Sanchez",
+            "agent_team": "Resolution Renegades",
+            "traits": [
+                "supportive",
+                "cooperative",
+                "reserved",
+                "quiet",
+                "introspective"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100048",
+            "agent_name": "Jayden Morris",
+            "agent_team": "Resolution Renegades",
+            "traits": [
+                "analytical",
+                "practical",
+                "stoic",
+                "formal",
+                "unassuming"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100049",
+            "agent_name": "Kylie Reed",
+            "agent_team": "Service Solutions",
+            "traits": [
+                "individualistic",
+                "skeptical",
+                "amiable",
+                "cordial",
+                "gracious"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100050",
+            "agent_name": "Christopher Cook",
+            "agent_team": "Service Solutions",
+            "traits": [
+                "approachable",
+                "sincere",
+                "candid",
+                "trustworthy",
+                "articulate"
+            ],
+            "performance": "neutral"
+        },
+        {
+            "agent_id": "100051",
+            "agent_name": "Paisley Bell",
+            "agent_team": "Service Solutions",
+            "traits": [
+                "expressive",
+                "considerate",
+                "supportive",
+                "cooperative",
+                "reserved"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100052",
+            "agent_name": "Brayden Bailey",
+            "agent_team": "Service Solutions",
+            "traits": [
+                "quiet",
+                "introspective",
+                "analytical",
+                "practical",
+                "stoic"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100053",
+            "agent_name": "Camila Rivera",
+            "agent_team": "Service Solutions",
+            "traits": [
+                "formal",
+                "unassuming",
+                "individualistic",
+                "skeptical",
+                "amiable"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100054",
+            "agent_name": "Jordan Cooper",
+            "agent_team": "Service Solutions",
+            "traits": [
+                "cordial",
+                "gracious",
+                "approachable",
+                "sincere",
+                "candid"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100055",
+            "agent_name": "Kennedy Howard",
+            "agent_team": "Service Solutions",
+            "traits": [
+                "trustworthy",
+                "articulate",
+                "expressive",
+                "considerate",
+                "supportive"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100056",
+            "agent_name": "Henry Ward",
+            "agent_team": "Service Solutions",
+            "traits": [
+                "cooperative",
+                "reserved",
+                "quiet",
+                "introspective",
+                "analytical"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100057",
+            "agent_name": "Madelyn Peterson",
+            "agent_team": "Help Desk Heroes",
+            "traits": [
+                "practical",
+                "stoic",
+                "formal",
+                "unassuming",
+                "individualistic"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100058",
+            "agent_name": "Jace Gray",
+            "agent_team": "Help Desk Heroes",
+            "traits": [
+                "skeptical",
+                "amiable",
+                "cordial",
+                "gracious",
+                "approachable"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100059",
+            "agent_name": "Clara Ramirez",
+            "agent_team": "Help Desk Heroes",
+            "traits": [
+                "sincere",
+                "candid",
+                "trustworthy",
+                "articulate",
+                "expressive"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100060",
+            "agent_name": "Lincoln James",
+            "agent_team": "Help Desk Heroes",
+            "traits": [
+                "considerate",
+                "supportive",
+                "cooperative",
+                "reserved",
+                "quiet"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100061",
+            "agent_name": "Sarah Watson",
+            "agent_team": "Help Desk Heroes",
+            "traits": [
+                "introspective",
+                "analytical",
+                "practical",
+                "stoic",
+                "formal"
+            ],
+            "performance": "negative"
+        },
+        {
+            "agent_id": "100062",
+            "agent_name": "Connor Brooks",
+            "agent_team": "Help Desk Heroes",
+            "traits": [
+                "unassuming",
+                "individualistic",
+                "skeptical",
+                "amiable",
+                "cordial"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100063",
+            "agent_name": "Scarlett Kelly",
+            "agent_team": "Help Desk Heroes",
+            "traits": [
+                "gracious",
+                "approachable",
+                "sincere",
+                "candid",
+                "trustworthy"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100064",
+            "agent_name": "Austin Price",
+            "agent_team": "Help Desk Heroes",
+            "traits": [
+                "articulate",
+                "expressive",
+                "considerate",
+                "supportive",
+                "cooperative"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100065",
+            "agent_name": "Vivian Bennett",
+            "agent_team": "Care Commanders",
+            "traits": [
+                "reserved",
+                "quiet",
+                "introspective",
+                "analytical",
+                "practical"
+            ],
+            "performance": "neutral"
+        },
+        {
+            "agent_id": "100066",
+            "agent_name": "Carson Wood",
+            "agent_team": "Care Commanders",
+            "traits": [
+                "stoic",
+                "formal",
+                "unassuming",
+                "individualistic",
+                "skeptical"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100067",
+            "agent_name": "Penelope Barnes",
+            "agent_team": "Care Commanders",
+            "traits": [
+                "amiable",
+                "cordial",
+                "gracious",
+                "approachable",
+                "sincere"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100068",
+            "agent_name": "Xavier Ross",
+            "agent_team": "Care Commanders",
+            "traits": [
+                "candid",
+                "trustworthy",
+                "articulate",
+                "expressive",
+                "considerate"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100069",
+            "agent_name": "Juliana Henderson",
+            "agent_team": "Care Commanders",
+            "traits": [
+                "supportive",
+                "cooperative",
+                "reserved",
+                "quiet",
+                "introspective"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100070",
+            "agent_name": "Easton Coleman",
+            "agent_team": "Care Commanders",
+            "traits": [
+                "analytical",
+                "practical",
+                "stoic",
+                "formal",
+                "unassuming"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100071",
+            "agent_name": "Rylee Jenkins",
+            "agent_team": "Care Commanders",
+            "traits": [
+                "individualistic",
+                "skeptical",
+                "amiable",
+                "cordial",
+                "gracious"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100072",
+            "agent_name": "Kevin Perry",
+            "agent_team": "Care Commanders",
+            "traits": [
+                "approachable",
+                "sincere",
+                "candid",
+                "trustworthy",
+                "articulate"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100073",
+            "agent_name": "Nora Powell",
+            "agent_team": "Contact Crusaders",
+            "traits": [
+                "expressive",
+                "considerate",
+                "supportive",
+                "cooperative",
+                "reserved"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100074",
+            "agent_name": "Cameron Long",
+            "agent_team": "Contact Crusaders",
+            "traits": [
+                "quiet",
+                "introspective",
+                "analytical",
+                "practical",
+                "stoic"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100075",
+            "agent_name": "Mary Patterson",
+            "agent_team": "Contact Crusaders",
+            "traits": [
+                "formal",
+                "unassuming",
+                "individualistic",
+                "skeptical",
+                "amiable"
+            ],
+            "performance": "negative"
+        },
+        {
+            "agent_id": "100076",
+            "agent_name": "Tyler Hughes",
+            "agent_team": "Contact Crusaders",
+            "traits": [
+                "cordial",
+                "gracious",
+                "approachable",
+                "sincere",
+                "candid"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100077",
+            "agent_name": "Maya Flores",
+            "agent_team": "Contact Crusaders",
+            "traits": [
+                "trustworthy",
+                "articulate",
+                "expressive",
+                "considerate",
+                "supportive"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100078",
+            "agent_name": "Josiah Washington",
+            "agent_team": "Contact Crusaders",
+            "traits": [
+                "cooperative",
+                "reserved",
+                "quiet",
+                "introspective",
+                "analytical"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100079",
+            "agent_name": "Katherine Butler",
+            "agent_team": "Contact Crusaders",
+            "traits": [
+                "practical",
+                "stoic",
+                "formal",
+                "unassuming",
+                "individualistic"
+            ],
+            "performance": "positive"
+        },
+        {
+            "agent_id": "100080",
+            "agent_name": "Hunter Simmons",
+            "agent_team": "Contact Crusaders",
+            "traits": [
+                "skeptical",
+                "amiable",
+                "cordial",
+                "gracious",
+                "approachable"
+            ],
+            "performance": "positive"
+        }
+    ]
+}

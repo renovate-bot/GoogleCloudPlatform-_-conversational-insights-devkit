@@ -1,0 +1,45 @@
+{
+    "projects": [
+        {
+            "project_id": "cx-sandbox-349720",
+            "project_number": "1008133512633",
+            "location": "us-central1",
+            "environments": ["prod"],
+            "buckets": {
+                "audios": "nadineboucher-insights-audios",
+                "transcripts": "nadineboucher-insights-transcripts",
+                "metadata": "nadineboucher-insights-metadata"
+            },
+            "virtual_agents": [],
+            "generation_profile": {
+                "theme": ["Entertainment"],
+                "language": ["en-US"],
+                "topics": [
+                    "Subscription Cancellation","Unexpected Charges","Login and Password Issues",
+                    "Streaming Quality Problems","Blackout Restrictions","App Malfunctions","Updating Payment Information",
+                    "Error Code Troubleshooting","Disney Bundle Inquiries","Difficulty Finding Content",
+                    "Fantasy Sports Issues","Audio/Video Sync Problems","ESPN BET Account Help","Promotional Offer Redemption",
+                    "On-Demand Content Availability","On-Air Talent Feedback","Device Compatibility","Closed Captioning Issues",
+                    "Account Deletion Requests","Programming Complaints"
+                ],
+                "model": "gemini-2.5-pro",
+                "temperature": [0.8,0.1],
+                "topp": [0.9,1],
+                "topk": [30,40],
+                "sentiment_journeys": ["Stable with no change","Low to Neutral","High to Neutral", "Neutral to High"],
+                "company_name": "ESPN",
+                "max_conversastions_per_run": {
+                    "audio": 5.0,
+                    "chat": 5.0,
+                    "agentic": 5.0
+                },
+                "probabilities": {
+                    "bad_sentiment": [0.1,0.2],
+                    "long_conversation": [0.1,0.2],
+                    "bad_performance": [0.1,0.2]
+                },
+                "prompt_hint": ["Simulate conversations that would be feasible to happen at ESPN, the company name is ESPN"]
+            }
+        }
+    ]
+}

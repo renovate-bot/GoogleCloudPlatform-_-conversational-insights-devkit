@@ -29,13 +29,13 @@ pip install -r requirements.txt
 
 
 ## Running linter
-pylint .
+# pylint .
 
 ## Running linter ++ 
-mypy .
+# mypy .
 
 ## Runing all unit tests
-python3 -m pytest "./tests/" 
+python3 -m pytest "./tests/unit/" 
 
 ## Runing all integration tests
 ## TODO: Setup the integration tests

@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "properties": {
+    "agents": {
+      "type": "array",
+      "description": "A list of agent profiles.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "agent_id": {
+            "type": "string",
+            "description": "The unique identifier for the agent."
+          },
+          "agent_name": {
+            "type": "string",
+            "description": "The full name of the agent."
+          },
+          "agent_team": {
+            "type": "string",
+            "description": "The team the agent belongs to."
+          },
+          "traits": {
+            "type": "array",
+            "description": "A list of personality or skill traits of the agent.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "performance": {
+            "type": "string",
+            "description": "A summary of the agent's performance level (e.g., average, excellent)."
+          }
+        },
+        "required": [
+          "agent_id",
+          "agent_name",
+          "agent_team",
+          "traits",
+          "performance"
+        ]
+      }
+    }
+  },
+  "required": ["agents"]
+}
